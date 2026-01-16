@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+#Cleaning the dataset and filling the null values
 
 data = pd.read_csv("Supply_Chain/dataset/smart_logistics_dataset.csv")
 print(data.head())
@@ -16,6 +17,8 @@ data['Logistics_Delay_Reason'] = data['Logistics_Delay_Reason'].fillna('Unknown'
 data['Logistics_Delay_Reason'].value_counts(normalize=True) * 100
 print(data.head())
 
-sns.countplot(data=data, x='Logistics_Delay_Reason', color="Blue", legend='data')
+#Simple plot which shows the no of dealy reasons
+sns.countplot(data=data, x='Logistics_Delay_Reason', color="Blue")
 plt.show()
+
 
