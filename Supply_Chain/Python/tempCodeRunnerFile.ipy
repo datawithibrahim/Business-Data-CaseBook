@@ -1,0 +1,21 @@
+'''
+    This is an python file which was used to create in .ipynb format due to json problem in jupiter notebook server the .ipyb file
+    will be getting corrupted again and again is why i have created .py file format as it will be supporting github while comiting the 
+    changes again and again. 
+'''
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = pd.read_csv("Supply_Chain/dataset/smart_logistics_dataset.csv")
+print(data.head())
+print(data.isnull().sum())
+data['Logistics_Delay_Reason'] = data['Logistics_Delay_Reason'].fillna('Unknown')
+data['Logistics_Delay_Reason'].value_counts(normalize=True) * 100
+print(data.head())
+
+sns.countplot(data=data, x='Logistics_Delay_Reason', color="Blue", legend='data')
+plt.show()
+
