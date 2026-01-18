@@ -20,17 +20,17 @@ Each commit typically represents one focused problem or analytical step.
 #### Purpose of This Repository
 
 The purpose of this repository is to:
--- Build consistency through daily or regular problem-solving  
--- Practice thinking like a business analyst, not just a coder  
--- Maintain a single, evolving record of analytical work  
--- Focus on reasoning, assumptions, and conclusions rather than visuals or polish  
+- Build consistency through daily or regular problem-solving  
+- Practice thinking like a business analyst, not just a coder  
+- Maintain a single, evolving record of analytical work
+-  Focus on reasoning, assumptions, and conclusions rather than visuals or polish  
 
 This repository reflects how I approach business analysis in practice.
 
 #### Tools Used
 
--- SQL for querying and structuring data  
--- Python for analysis and exploration  
+- SQL for querying and structuring data  
+- Python for analysis and exploration  
 
 The choice of tools is secondary to the clarity of the business reasoning.
 
