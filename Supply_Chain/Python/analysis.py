@@ -81,9 +81,7 @@ def asset_location_plot(data):
 
 
 if __name__ == "__main__":
-
     df = load_and_clean_data()
-
     delay_reason_plot(df)
     inventory_distribution(df)
     transaction_violin(df)
